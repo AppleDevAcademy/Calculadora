@@ -1,5 +1,5 @@
 import SwiftUI
-var expressaoAtual:String = "CASA"
+var expressaoAtual:String = "C"
 var tamanhoButton:CGFloat = 77
 var corButton:Color = .gray
 var corEspecialButton:Color = .green
@@ -7,18 +7,21 @@ var corEspecialButton:Color = .green
 struct ContentView: View {
     var body: some View {
         VStack {
+            Spacer()
             HStack{
-                Text(expressaoAtual)
+                Text("\(expressaoAtual)")
                     .frame(width: 350, height: 50, alignment: .center)
-                    .padding(10)
                     .font(.system(size: 30))
                     .foregroundColor(.black)
                     .background(.blue)
-            }
+                    .padding(10)
+            }.padding(5)
             ZStack{
                 VStack{
                     HStack{
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = "A"
+                        },
                                label: {
                                     Text("1")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -177,7 +180,8 @@ struct ContentView: View {
 
                     }
                 }
-            }
+            }.frame(width: 300, height: 300)
+                .padding(.vertical, 80)
         }
     }
 }
