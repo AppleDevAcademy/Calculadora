@@ -21,7 +21,7 @@ struct ContentView: View {
                 VStack{
                     HStack{
                         Button(action:{
-                            expressaoAtual = "123"
+                            expressaoAtual = expressaoAtual + "1"
                         },
                                label: {
                                     Text("1")
@@ -31,7 +31,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "2"
+                        },
                                label: {
                                     Text("2")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -40,7 +42,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "3"
+                        },
                                label: {
                                     Text("3")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -49,7 +53,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "+"
+                        },
                                label: {
                                     Text("+")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -61,7 +67,9 @@ struct ContentView: View {
                         
                     }
                     HStack{
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "4"
+                        },
                                label: {
                                     Text("4")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -70,7 +78,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "5"
+                        },
                                label: {
                                     Text("5")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -79,7 +89,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "6"
+                        },
                                label: {
                                     Text("6")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -88,7 +100,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "-"
+                        },
                                label: {
                                     Text("-")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -97,11 +111,11 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corEspecialButton)
                                         })
-                        
-
                     }
                     HStack{
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "7"
+                        },
                                label: {
                                     Text("7")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -110,7 +124,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "8"
+                        },
                                label: {
                                     Text("8")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -119,7 +135,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "9"
+                        },
                                label: {
                                     Text("9")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -128,7 +146,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "X"
+                        },
                                label: {
                                     Text("X")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -137,11 +157,11 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corEspecialButton)
                                         })
-                        
-
                     }
                     HStack{
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = ""
+                        },
                                label: {
                                     Text("C")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -150,7 +170,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corEspecialButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "0"
+                        },
                                label: {
                                     Text("0")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -159,7 +181,8 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                        },
                                label: {
                                     Text("=")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -168,7 +191,9 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corEspecialButton)
                                         })
-                        Button(action: {},
+                        Button(action: {
+                            expressaoAtual = expressaoAtual + "/"
+                        },
                                label: {
                                     Text("%")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -177,8 +202,6 @@ struct ContentView: View {
                                         .foregroundColor(.black)
                                         .background(corEspecialButton)
                                         })
-                        
-
                     }
                 }
             }.frame(width: 300, height: 300)
