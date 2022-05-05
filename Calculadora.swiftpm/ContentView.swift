@@ -1,26 +1,28 @@
 import SwiftUI
-var expressaoAtual:String = "C"
-var tamanhoButton:CGFloat = 77
-var corButton:Color = .gray
-var corEspecialButton:Color = .green
-var stringTest:String = "carro"
 
 struct ContentView: View {
+    @State var expressaoAtual:String = ""
+    @State var tamanhoButton:CGFloat = 77
+    @State var corButton:Color = .gray
+    @State var corEspecialButton:Color = .green
+    @State var stringTest:String = "carro"
+    
+    
     var body: some View {
         VStack {
             Spacer()
             HStack{
                 Text("\(expressaoAtual)")
-                    .frame(width: 350, height: 50, alignment: .center)
-                    .font(.system(size: 30))
+                    .frame(width: 400, height: 90, alignment: .center)
+                    .font(.system(size: 50))
                     .foregroundColor(.black)
-                    .background(.blue)
-                    .padding(10)
             }.padding(5)
             ZStack{
                 VStack{
                     HStack{
-                        Button(action:{stringTest = "123"},
+                        Button(action:{
+                            expressaoAtual = "123"
+                        },
                                label: {
                                     Text("1")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -181,7 +183,6 @@ struct ContentView: View {
                 }
             }.frame(width: 300, height: 300)
                 .padding(.vertical, 80)
-            Text(stringTest)
         }
     }
 }
