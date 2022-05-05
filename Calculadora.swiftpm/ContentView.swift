@@ -3,6 +3,7 @@ var expressaoAtual:String = "C"
 var tamanhoButton:CGFloat = 77
 var corButton:Color = .gray
 var corEspecialButton:Color = .green
+var stringTest:String = "carro"
 
 struct ContentView: View {
     var body: some View {
@@ -19,9 +20,7 @@ struct ContentView: View {
             ZStack{
                 VStack{
                     HStack{
-                        Button(action: {
-                            expressaoAtual = "A"
-                        },
+                        Button(action:{stringTest = "123"},
                                label: {
                                     Text("1")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
@@ -182,6 +181,7 @@ struct ContentView: View {
                 }
             }.frame(width: 300, height: 300)
                 .padding(.vertical, 80)
+            Text(stringTest)
         }
     }
 }
