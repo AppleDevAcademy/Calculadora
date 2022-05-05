@@ -147,10 +147,10 @@ struct ContentView: View {
                                         .background(corButton)
                                         })
                         Button(action: {
-                            expressaoAtual = expressaoAtual + "X"
+                            expressaoAtual = expressaoAtual + "*"
                         },
                                label: {
-                                    Text("X")
+                                    Text("x")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
                                         .padding(5)
                                         .font(.system(size: 50))
@@ -195,7 +195,7 @@ struct ContentView: View {
                             expressaoAtual = expressaoAtual + "/"
                         },
                                label: {
-                                    Text("%")
+                                    Text("÷")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
                                         .padding(5)
                                         .font(.system(size: 50))
