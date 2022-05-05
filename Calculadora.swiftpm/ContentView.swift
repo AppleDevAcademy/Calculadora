@@ -4,7 +4,7 @@ struct ContentView: View {
     @State var expressaoAtual:String = ""
     @State var tamanhoButton:CGFloat = 77
     @State var corButton:Color = .gray
-    @State var corEspecialButton:Color = .green
+    @State var corEspecialButton:Color = .orange
     @State var stringTest:String = "carro"
     
     
@@ -29,7 +29,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(Circle().fill(corButton))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "2"
@@ -40,7 +40,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "3"
@@ -51,7 +51,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "+"
@@ -62,7 +62,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corEspecialButton)
+                                        .background(corEspecialButton.cornerRadius(50))
                                         })
                         
                     }
@@ -76,7 +76,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "5"
@@ -87,7 +87,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "6"
@@ -98,7 +98,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "-"
@@ -109,7 +109,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corEspecialButton)
+                                        .background(corEspecialButton.cornerRadius(50))
                                         })
                     }
                     HStack{
@@ -122,7 +122,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "8"
@@ -133,7 +133,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "9"
@@ -144,7 +144,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "*"
@@ -155,7 +155,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corEspecialButton)
+                                        .background(corEspecialButton.cornerRadius(50))
                                         })
                     }
                     HStack{
@@ -168,7 +168,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corEspecialButton)
+                                        .background(corEspecialButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "0"
@@ -179,7 +179,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corButton)
+                                        .background(corButton.cornerRadius(50))
                                         })
                         Button(action: {
                         },
@@ -189,7 +189,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corEspecialButton)
+                                        .background(corEspecialButton.cornerRadius(50))
                                         })
                         Button(action: {
                             expressaoAtual = expressaoAtual + "/"
@@ -200,7 +200,7 @@ struct ContentView: View {
                                         .padding(5)
                                         .font(.system(size: 50))
                                         .foregroundColor(.black)
-                                        .background(corEspecialButton)
+                                        .background(corEspecialButton.cornerRadius(50))
                                         })
                     }
                 }
