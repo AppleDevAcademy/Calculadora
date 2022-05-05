@@ -150,7 +150,7 @@ struct ContentView: View {
                             expressaoAtual = expressaoAtual + "*"
                         },
                                label: {
-                                    Text("x")
+                                    Text("X")
                                         .frame(width: tamanhoButton, height: tamanhoButton)
                                         .padding(5)
                                         .font(.system(size: 50))
